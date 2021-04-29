@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
+     <link href='https://fonts.googleapis.com/css?family=Holtwood One SC' rel='stylesheet'>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </head>
+    <body>
+    <script>
+        window.addEventListener("mouseover",play);
+window.addEventListener("click",play);
+function play() { document.getElementById("a").play();
+}
+    </script>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+}
+body {
+   
+}
+.page1{
+    background-color:#2A52BE; 
+    background-image:url("https://i.pinimg.com/originals/95/58/b9/9558b95660d31cdbfb19167da2a707f4.gif");
+   height:100vh;
+   width:100vw;
+   display:flex;
+   place-items:center;
+   justify-content:center;
+   align-items:center;
+}
+.grid-container {
+  height:95vh;
+  width:95vw;
+  background-color:black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Area1 Area1 Area1 Area1 Area3 Area3"
+    "Area1 Area1 Area1 Area1 Area3 Area3"
+    "Area2 Area2 Area5 Area5 Area3 Area3"
+    "Area2 Area2 Area5 Area5 Area3 Area3"
+    "Area2 Area2 Area4 Area4 Area4 Area4"
+    "Area2 Area2 Area4 Area4 Area4 Area4";
+    font-weight:700;
+    font-family:'Lora';
+}
+
+.Area1 { 
+    grid-area: Area1;
+    padding:10px;
+    background-color:#304057; 
+    color:pink;
+    border:2px solid white;
+}
+
+.Area2 { 
+    grid-area: Area2; 
+    background-color:#36498f;
+    color:#cccccc;
+    padding:10px;
+    border:2px solid white;
+}
+
+.Area3 { 
+    grid-area: Area3;
+    background-color:orange;
+    background-color:#2e3047;
+    color:#3bba9c;
+    padding:10px;
+    border:2px solid white;
+}
+
+.Area4 { 
+    grid-area: Area4; 
+    background-color:#41004d;
+    color:#fff;
+    padding:10px;
+    border:2px solid white;
+}
+
+.Area5 { 
+    grid-area: Area5; 
+    background-color:cyan;
+    padding:10px;
+    float:center;
+    font-size:18px;
+    font-weight:900;
+    border:2px solid white;
+}
+
+.page2{
+   position:absolute;
+   top:0;
+   left:0;
+   background-color:transparent; 
+   height:100vh;
+   width:100vw;
+   display:flex;
+   place-items:center;
+   justify-content:center;
+   align-items:center;
+}
+.grid-container2 {
+  top:2.5vh;
+  left:2.5vw;
+  height:95vh;
+  width:95vw;
+  background-color:transparent;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Area11 Area11 Area11 Area11 Area13 Area13"
+    "Area11 Area11 Area11 Area11 Area13 Area13"
+    "Area12 Area12 Area15 Area15 Area13 Area13"
+    "Area12 Area12 Area15 Area15 Area13 Area13"
+    "Area12 Area12 Area14 Area14 Area14 Area14"
+    "Area12 Area12 Area14 Area14 Area14 Area14";
+}
+.Area11, .Area12, .Area13, .Area14, .Area15{
+    animation: fade 5s ease-out both;
+}
+.Area11 { 
+    grid-area: Area11;
+    background-color:black; 
+    border:2px solid white;
+     background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpM6uAnIuRdHDjD7mEcvWZG3ObmXYSrZ2kug&usqp=CAU");
+  background-size:100% 110%;  
+  animation-delay:7s;
+}
+
+.Area12 { 
+    grid-area: Area12; 
+    background-color:black;
+    border:2px solid white; 
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkvS3WWAMS2QUqabMcJlNwfx5eL0pD-VzcEoLxIV1zXMlSR3E&s");
+    background-size:100% 100%;
+    animation-delay:12s;
+}
+
+.Area13 { 
+    grid-area: Area13;
+    background-color:black;
+    border:2px solid white;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4I2MQedKdBSNxnhAa4UruKMIw6NaG_tZbUQ&usqp=CAU");
+    background-size:100% 110%;
+    animation-delay:9s;
+}
+
+.Area14 { 
+    grid-area: Area14; 
+    background-color:black;
+    border:2px solid white;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRG0s9Uyeia4P3xPYZwVIjfn_M23_CLVmyuA&usqp=CAU");
+    background-size:100% 100%;
+    animation-delay:15s;
+}
+
+.Area15 { 
+    grid-area: Area15; 
+    background-color:black;
+    border:2px solid white;
+    background-image:url("https://api.sololearn.com/Uploads/Avatars/9151475.jpg");
+    background-size:100% 100%;
+    animation-delay:5s;
+}
+
+
+
+@keyframes fade{
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.page3{
+    height:100vh;
+    width:100vw;
+    background-image:url("https://i.gifer.com/ZGZ4.gif");
+    background-size:100% 100%;
+    
+    position:absolute;
+    top:-20%;
+    left:0%;
+}
+.Area5{
+    font-family: 'Holtwood One SC';
+    background-color:#0095B6;
+}
+
+
+    </style>
+    <audio controls style=" display:none;" loop   id="a"  >
+ <source src="https://dl.dropbox.com/s/t0wouz62s241lr2/Most-Wanted-Munda%28Ki-And-Ka%29.MP3?raw=1">
+    <script>
+     Swal.fire('Happy birthday Amardeep Bhaiya🎊\n A small try🧗‍♀️ to express my gratitude🤗 \n It is quite simple😕 and boring😥 as I am a beginner😔 ')
+        </script>  
+      </audio> 
+    <div class="page1">
+       <div class="grid-container">
+  <div class="Area1"><i>When life gets crazy,
+you need to have someone to lean on,
+laugh with, and do stupid stuff with-
+I’m glad I found you so
+I can do all those things 
+You’re the best! 
+I hope your day is as memorable as
+the day you were born.</i></div>
+
+  <div class="Area2">Blow out your candles and make a big wish!
+Let’s cut this cake and enjoy this dish!
+I hope you have a great birthday and i
+get to eat all your cake and ice cream i want. Cheers to you on your special day!</div>
+  <div class="Area3">
+  Worried about getting older today?
+Worry no more. Just think of it this way:
+You are increasing in value not getting older.
+Happy Birthday
+  </div>
+  <div class="Area4"> Bhaiya Aap se bohot kuch sikha, sirf coding hi nhi but real life lessons bhi, you are truly an inspiration for me. Un life changing lessons k liye and always mushkil se muskil situations mein bhi positivity spread krne k liye thank you so much </div>
+  <div class="Area5"><center>HAPPY BIRTH DAY AMAR DEEP BHAIYA</center></div>
+</div>
+</div>
+
+<div class="page2">
+<div class="grid-container2">
+  <div class="Area11"></div>
+  <div class="Area12"></div>
+  <div class="Area13"></div>
+  <div class="Area14"></div>
+  <div class="Area15"></div>
+</div>
+</div>
+<div class="page3"></div>
+    </body>
+</html>
